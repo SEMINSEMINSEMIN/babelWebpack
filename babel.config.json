@@ -1,0 +1,5 @@
+// 설치한 @babel/preset-env를 사용하겠다.
+
+{
+    "presets": ["@babel/preset-env"]
+}
