@@ -1,0 +1,11 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "modules": false // Babel은 import를 require() 구문으로 변환을 시키는데, require는 export하는 모든 모듈을 가져오게 됨. 이를 방지하기 위해 import, export 구문을 ES5 문법으로 변환시키지 않음
+            }
+        ]
+    ],
+    "plugins": [["@babel/plugin-transform-runtime",{"corejs":3}]]
+}
